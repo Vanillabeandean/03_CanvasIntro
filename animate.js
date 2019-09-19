@@ -39,13 +39,15 @@ function handleShipAnimation() {
 
 function RenderNewObject(context) {
   context.fillStyle = 'rgb(200, 0, 0)';
-  context.fillRect (100, 100, 100, 100);
-  
-  context.translate (10, 10);
-}
+  context.fillRect (CUBE.x, CUBE.y, 100, 100);
+  }
+
 
 function HandleNewObjectMovement(){
-  }
+if (CUBE.x < 500){
+    CUBE.x = CUBE.x+1;
+}
+}
 
 function runGame() {
   var canvas = document.getElementById('mainCanvas');
